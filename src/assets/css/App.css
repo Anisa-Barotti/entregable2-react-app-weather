@@ -1,0 +1,176 @@
+.App {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(126, 134, 138, 0.4);
+    color: #f7f5f5;
+}
+.App .search {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 20px 20px 20px 20px;
+    -webkit-border-radius: 20px 20px 20px 20px;
+    -moz-border-radius: 20px 20px 20px 20px;
+    -ms-border-radius: 20px 20px 20px 20px;
+    -o-border-radius: 20px 20px 20px 20px;
+}
+/*Marcador de posición*/
+.App input {
+    padding: .7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255,255,255, 0.8);
+    box-shadow: 0 0 14px ;
+    background: rgba(255,255,255, 0.1);
+    color: #fffafa;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+::placeholder {
+    color: #f8f8f8;
+}
+.App:before {
+    content: '';
+    background: url(C:\Users\anisa\Documents\Academlo-GEN-23\2°MODULO-REACT\Entregable_2\Aplicacion-del-clima\Entregable2-app-clima\src\assets\montain.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*Article*/
+.container__app {
+    flex-direction: column;
+    max-width: 450px;
+    height: 400px;
+    margin: auto;
+    padding: 10px 5px 10px 5px;
+    position: relative;
+    top: 18%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px 50px 12px 50px;
+    box-shadow: 0 0 14px ;
+    background-color: rgba(255, 255, 255, 0.178);
+    color: rgb(46, 44, 44);
+    font-size: 16px;
+    -webkit-border-radius: 12px 50px 12px 50px;
+    -moz-border-radius: 12px 50px 12px 50px;
+    -ms-border-radius: 12px 50px 12px 50px;
+    -o-border-radius: 12px 50px 12px 50px;
+}
+.title {
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-top: -110px;
+    padding-top: 20px;
+    text-shadow: 2px 2px cornsilk;
+}
+/*Ubicación*/
+.Location {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    justify-content: center;
+    margin-bottom: -20px;
+    color: white;
+    text-shadow: 2px 2px rgb(8, 8, 8);
+}
+/*clima*/
+.container__weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    margin-left: -60px;
+}
+.container__icon {
+    width: 100px;
+    height: 150px;
+}
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+}
+.temp {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+    width: 70px;
+    height: 50px;
+    color: white;
+    text-shadow: 4px 3px rgb(3, 3, 3);
+ }
+ /*Boton de cambio de temperatura*/
+ .bottom {
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 14px ;
+    background-color: rgba(0, 0, 0, 0.377);
+    color: rgb(245, 245, 245);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bolder;
+    font-size: 18px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-color: grey;
+}
+/*Footer*/
+.description {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    margin-top: 0px;
+    color: white;
+    text-shadow: 2px 2px rgb(3, 3, 3);
+    text-decoration-color: white;
+}
+.container__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.678);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.container__data img {
+    width: 30px;
+    position: absolute;
+    justify-content: center;
+    margin-left: -34px;   
+}   
+.container__data li {
+    display:flex;
+    align-items: center;
+    margin-right: 10px;
+    text-align: center; 
+    color: white; 
+    font-size: 17px;
+}
+/*Pantalla de carga*/
+.loader {
+    color: rgb(9, 23, 53);
+    background-color: rgb(132, 139, 139);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
